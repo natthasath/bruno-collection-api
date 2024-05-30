@@ -1,0 +1,22 @@
+meta {
+  name: Order
+  type: http
+  seq: 2
+}
+
+post {
+  url: https://petstore.swagger.io/v2/store/order
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 0,
+    "petId": 0,
+    "quantity": 0,
+    "shipDate": "2024-05-30T03:52:51.793Z",
+    "status": "placed",
+    "complete": true
+  }
+}
